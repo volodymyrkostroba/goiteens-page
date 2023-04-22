@@ -1,0 +1,57 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+.hero{
+    background-color: rgb(117, 80, 222);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero__title{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero__description{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero__description > strong {
+    color: #fcae26;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 694px) {
+    .hero{
+        display: flex;
+        
+        align-items: center;
+        background-image: url(../images/baner/mob.png);
+        padding-top:325px;
+        padding-bottom: 130px;
+
+    }
+
+    .hero__title{
+        margin-bottom: 22px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+  }
+  
+  @media screen and (max-width: 1199px) {
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
+  }
