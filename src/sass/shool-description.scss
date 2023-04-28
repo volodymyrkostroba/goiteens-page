@@ -26,14 +26,24 @@
 }
 
 .preface-selected__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: left;
     color: #fff;
+    font-family: var(--primary-font-text);
     font-weight: 400;
 }
+
+
 
 @media screen and (max-width: 694px) {
     .preface{
         padding: 30px 0;
+    }
+
+    .preface-wraper__description{
+        font-size: 18px;
     }
 
     .preface-wraper__description{
@@ -46,11 +56,9 @@
     }
 
     .preface-selected__description{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        font-size: 18px;
     }
 
     .preface-selected__description::before{
@@ -59,7 +67,7 @@
         width: 62px;
         height: 2px;
         background-image: url(../images/description-section/verticalline-mobile.png);
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
 
@@ -67,4 +75,66 @@
         
     }
   }
-  
+
+//   ///////
+@media screen and (min-width: 695px) {
+    .preface{
+        padding: 40px 0;
+    }
+
+    .preface-wraper__description{
+        margin-bottom: 20px;
+    }
+
+    .preface-wraper__description:nth-child(1){
+        margin-bottom: 20px;
+    }
+    
+    .preface-selected{
+        padding: 45px;
+    }
+
+    .preface-selected__description{
+        font-size: 20px;
+    }
+
+    .preface-selected__description::before{
+        display: block;
+        content: '';
+        background-image: url(../images/description-section/verticalline-tablet.png);
+        width: 3px;
+        height: 102px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+
+        margin-right: 25px;
+    }
+  }
+
+//   /////////
+
+@media screen and (min-width: 1200px) {
+    .preface{
+        padding: 118px 0;
+    }
+
+    .preface-wraper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .preface-wraper__description:nth-child(1){
+        margin-bottom: 40px;
+    }
+
+    .preface-selected{
+        padding: 70px 256px;
+    }
+
+    .preface-selected__description{
+        font-size: 20px;
+    }
+
+  }
