@@ -1,11 +1,10 @@
 .structure-list__item{
     padding: 20px;
     background-color: #faebd0;
-    margin-bottom: 10px;
     border-top-right-radius:25px ;
     border-bottom-left-radius: 25px;
 
-    height: 290px;
+    height: 260px;
 }
 
 .soft-skilss{
@@ -28,3 +27,48 @@
     border-bottom-left-radius: 25px;
     border: 2px #fff dashed;
 }
+
+@media screen and (max-width: 694px) {
+    .structure-list__item:not(:last-child){
+        margin-bottom: 10px;
+    }
+  }
+
+
+
+  @media screen and (min-width: 695px) and (max-width: 1200px) {
+   .structure-list{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .structure-list__item{
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    height: 290px;
+   }
+
+   .structure-list__item:nth-child(n + 2){
+    margin-bottom: 0;
+   }
+
+   .structure-list__item:nth-child(odd){
+    margin-right: 20px;
+   }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .structure-list{
+        display: flex;
+       }
+
+    .structure-list__item{
+        flex-basis: calc(25% - 22.5px);
+        margin-right: 30px;
+        height: 290px;
+       }
+
+       .structure-list__item:last-child{
+        margin-right: 0;
+       }
+  }
