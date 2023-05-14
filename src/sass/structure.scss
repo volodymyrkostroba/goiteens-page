@@ -1,0 +1,30 @@
+.structure-list__item{
+    padding: 20px;
+    background-color: #faebd0;
+    margin-bottom: 10px;
+    border-top-right-radius:25px ;
+    border-bottom-left-radius: 25px;
+
+    height: 290px;
+}
+
+.soft-skilss{
+    background-color: #fbdcd2;
+}
+
+.it-english{
+    background-color: #e2d8f5;
+}
+
+.hakaton{
+    background-color: #c8eae8;
+}
+
+.structure-list__item > div{
+    padding: 20px;
+    background-color: #faebd0;
+    margin-bottom: 10px;
+    border-top-right-radius:25px ;
+    border-bottom-left-radius: 25px;
+    border: 2px #fff dashed;
+}
