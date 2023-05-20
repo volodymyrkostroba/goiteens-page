@@ -1,5 +1,7 @@
 .structure-list__item{
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #faebd0;
     border-top-right-radius:25px ;
     border-bottom-left-radius: 25px;
@@ -20,9 +22,10 @@
 }
 
 .structure-list__item > div{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     padding: 20px;
-    background-color: #faebd0;
-    margin-bottom: 10px;
+    background-color: inherit;
     border-top-right-radius:25px ;
     border-bottom-left-radius: 25px;
     border: 2px #fff dashed;
