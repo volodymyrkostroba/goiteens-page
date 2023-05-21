@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 694px) {
+    .structure{
+        padding-bottom: 65px;
+    }
+
     .structure-list__item:not(:last-child){
         margin-bottom: 10px;
     }
@@ -40,6 +44,10 @@
 
 
   @media screen and (min-width: 695px) and (max-width: 1200px) {
+    .structure{
+        padding-bottom: 100px;
+    }
+
    .structure-list{
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +69,10 @@
   }
 
   @media screen and (min-width: 1200px) {
+    .structure{
+        padding-bottom: 120px;
+    }
+
     .structure-list{
         display: flex;
        }
